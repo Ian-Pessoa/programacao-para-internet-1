@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="http://127.0.0.1:5500/teste" method="post">
+
+    <fieldset>
+      <legend>Informações</legend>
+      <div>
+        <label for="nome">Nome do Usuário</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      </div>
+  
+      <div>
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+      </div>
+  
+      <div>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite uma senha" required>
+      </div>
+  
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="teste@teste.com">
+      </div>
+  
+      <div>
+        <label for="nascimento">Data de Nascimento</label>
+        <input type="date" id="nascimento" name="nascimento">
+      </div>
+
+      <div>
+        <label for="">Nome da Mãe</label>
+        <input type="text">
+      </div>
+
+      <div>
+        <label for="foto">Foto</label>
+        <input type="file" id="foto" name="foto" required accept="png, .svg, .jpg, .jpeg">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+      <div>
+        <label for="rua">Nome da Rua</label>
+        <input type="text" id="rua" name="rua" required>
+      </div>
+  
+      <div>
+        <label for="bairro">Nome do Bairro</label>
+        <input type="text" id="bairro" name="bairro" required>
+      </div>
+  
+      <div>
+        <label for="numero">Número da Casa</label>
+        <input type="number" min="0" max="9999" id="numero" name="numero" required>
+      </div>
+  
+      <div>
+        <label for="cep">Número do CEP</label>
+        <input type="text" id="cep" name="cep" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações financeiras</legend>
+      <p>Salário</p>
+      <label for="grupo1">Entre R$1000 à R$3000</label>
+      <input type="radio" min="1000" max="3000" id="grupo1" name="salario">
+      <br>
+      <label for="grupo2">Entre R$3001 à R$5000</label>
+      <input type="radio" min="1000" max="3000" id="grupo2" name="salario">
+      <br>
+      <label for="grupo3">Entre R$5001 à R$8000</label>
+      <input type="radio" min="1000" max="3000" id="grupo3" name="salario">
+
+      <br>
+
+      <p>Selecione os assuntos que mais lhe interessam</p>
+      <label for="informatica">Informática</label>
+      <input type="checkbox" name="conteudo" id="informatica" checked>
+
+      <label for="redes">Redes</label>
+      <input type="checkbox" name="conteudo" id="redes">
+
+      <label for="geopolitica">Geopolítica</label>
+      <input type="checkbox" name="conteudo" id="geopolitica">
+
+      <label for="programacao">Programação</label>
+      <input type="checkbox" name="conteudo" id="programacao">
+
+      <label for="musica">Música</label>
+      <input type="checkbox" name="conteudo" id="musica">
+    </fieldset>
+
+    <fieldset>
+      <legend>Comentários do Usuário</legend>
+      <label for="comentario">Comentário</label>
+      <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+    </fieldset>
+    <button type="submit">Enviar Formulário</button>
+    <button type="reset">Resetar Formulário</button>
+  </form>
+</body>
+</html>
