@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário para pedido</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form action="">
+    <fieldset class="informacoes-pessoais">
+      <legend>Informações pessoais</legend>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Insira seu Nome" required>
+      </div>
+  
+      <div>
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Insira seu sobrenome" required>
+      </div>
+  
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Insira seu E-mail" required>
+      </div>
+  
+      <div>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone" required>
+      </div>
+    </fieldset>
+  
+    <fieldset class="endereco">
+      <legend>Endereço</legend>
+      <div>
+        <label for="rua">Rua</label>
+        <input type="text" id="rua" name="rua" placeholder="Insira sua Rua" required>
+      </div>
+  
+      <div>
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" name="bairro" placeholder="Insira seu Bairro" required>
+      </div>
+  
+      <div>
+        <label for="numero">Número</label>
+        <input type="text" id="numero" name="numero" placeholder="Insira seu Número" required>
+      </div>
+  
+      <div>
+        <label for="referencia">Ponto de Referência (opcional)</label>
+        <input type="text" id="referencia" name="referencia" placeholder="Insira o Ponto de Referência">
+      </div>
+    </fieldset>
+  
+    <fieldset class="cartao-credito">
+      <legend>Cartão de Crédito</legend>
+      <div>
+        <label for="titular_cartao">Nome Impresso no Cartão</label>
+        <input type="text" id="titular_cartao" name="ttular_cartao" placeholder="Insira o nome" required>
+      </div>
+  
+      <div>
+        <label for="cartao">Número do Cartão</label>
+        <input type="number" id="cartao" name="cartao" placeholder="Insira o nº do Cartão" required>
+      </div>
+  
+      <div>
+        <label for="vencimento">Vencimento</label>
+        <input type="month" id="vencimento" name="vencimento" placeholder="Insira o vencimento" required>
+      </div>
+  
+      <div>
+        <label for="cvv">CVV</label>
+        <input type="number" min="100" max="999" id="cvv" name="cvv" placeholder="CVV" required>
+      </div>
+    </fieldset>
+
+    <fieldset class="selecionar-prato">
+      <legend>Selecione seu prato</legend>
+
+      <label for="prato1">Filé à Parmegiana - R$28,99</label>
+      <input type="radio" id="prato1" name="prato">
+      <br>
+      <label for="prato2">Picanha argentina - R$32,00</label>
+      <input type="radio" id="prato2" name="prato">
+      <br>
+      <label for="prato3">Bacalhau Zé do Pipo - R$36,89</label>
+      <input type="radio" id="prato3" name="prato">
+    </fieldset>
+    <div class="botoes">
+      <button class="botao-pedido" type="submit">Fazer pedido</button>
+      <button class="botao-reiniciar" type="reset">Reiniciar formulário</button>
+    </div>
+  </form>
+</body>
+</html>

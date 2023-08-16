@@ -1,0 +1,54 @@
+body {
+  margin-top: 50px;
+  font-family: Arial;
+  background-color: rgba(21, 92, 18, 0.5);
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  margin-bottom: 25px;
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(245, 245, 245);
+}
+
+button:hover {
+  background-color: rgb(240, 245, 245);
+}
+
+button:active {
+  background-color: rgba(240, 245, 245, 0.5);
+  transition: all 0.1s;
+}
+
+.informacoes-pessoais,
+.cartao-credito {
+  color: white;
+  background-color: rgba(158, 40, 40, 0.9);
+}
+
+.endereco,
+.selecionar-prato {
+  background-color: whitesmoke;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+}
+
+.botao-pedido {
+  margin-right: 10px;
+}
