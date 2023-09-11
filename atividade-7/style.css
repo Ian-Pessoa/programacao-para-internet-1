@@ -50,7 +50,22 @@ header nav ul {
   justify-content: space-between;
 }
 
-.introducao, .depoimentos {
+footer{
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+ }
+
+ footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 50px;
+ }
+
+.introducao, .depoimentos, .parcerias {
   height: 500px;
   background-color: #2c3aba;
   display: flex;
@@ -89,4 +104,19 @@ header nav ul {
 
 .depoente {
   width: 350px;
+}
+
+.parcerias {
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+}
+
+.parcerias > ol {
+  list-style: none;
+}
+
+.parcerias > ol >li:nth-child(odd){
+  background-color: black;
 }
