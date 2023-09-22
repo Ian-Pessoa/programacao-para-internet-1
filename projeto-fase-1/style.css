@@ -28,7 +28,7 @@ a {
   color: white; 
 }
 
-.home-page, .head, .head-sections, .contato, .contato-right-div, .social-icons-container, .home-main-text-container, .home-buttons-container{
+.home-page, .head, .head-sections, .contato, .contato-right-div, .social-icons-container, .home-main-text-container, .home-buttons-container, .comida-container{
   display: flex;
   align-items: center;
 }
@@ -122,13 +122,22 @@ a.home-button {
   font-weight: 400;
 }
 
-.home-main-text-container div {
+.comida-container {
+  margin-bottom: 85px;
+}
+
+.linha {
+  border: 1px solid #e52b34;
+  width: 85px;
+}
+
+.home-main-text-container h3 {
   font-weight: 500;
   letter-spacing: 5px;
   font-size: 17px;
   font-weight: 700;
   color: #e52b34;
-  margin-bottom: 50px;
+  margin: 0 30px;
 }
 
 .home-buttons-container {
@@ -144,10 +153,85 @@ a.home-button {
   width: 14px;
   border: 1px solid #4d4d4d;
   border-radius: 7px;
+  border-style: double;
+  cursor: pointer;
 }
+
+/* ---------- SOBRE NÓS -----------*/
+
+.sobre-section {
+  display: flex;
+  margin: 0 53px;
+  padding: 0 180px;
+  height: 680px;
+}
+
+.reserva {
+  background-color: #e52b34;
+  padding: 48px;
+}
+
+.titulo-reserva {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.reserva input {
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  background-color: #e52b34;
+  height: 50px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 274px;
+}
+
+.reserva input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.botao-reserva {
+  padding: 16px 24px;
+  height: 58px;
+  width: 274px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.sobre-div {
+  position: absolute;
+}
+
+.sobre-section img {
+  height: 620px;
+  position: relative;
+  right: 0;
+  bottom: -60px;
+  z-index: -1;
+}
+
+/* ---------- DISPLAY -----------*/
 
 @media (min-width:999px){
   .home-page{
     height: 965px;
+  }
+}
+
+@media (min-width:899px){
+  .home-page{
+    height: 751px;
   }
 }
