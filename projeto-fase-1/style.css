@@ -18,15 +18,8 @@ a {
 
 /* ---------- PÁGINA INICIAL -----------*/
 
-.header {
-  width: 1100px;
-  margin: 0 auto;
-}
-
 .home-page {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
   width: 100%;
   height: 751px;
@@ -35,30 +28,14 @@ a {
   color: white; 
 }
 
-.head, .head-sections {
+.home-page, .head, .head-sections, .contato, .contato-right-div, .social-icons-container, .home-main-text-container, .home-buttons-container{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 2; 
 }
 
-.contato, .contato-right-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2; 
-  margin-bottom: 8px
-}
-
-.social-icons {
-  height: 15px;
-}
-
-.social-icons-container {
-  width: 80px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.header {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .contato {
@@ -67,8 +44,26 @@ a {
   font-weight: 400;
 }
 
+.contato, .contato-right-div {
+  z-index: 2; 
+  margin-bottom: 8px
+}
+
+.head, .head-sections, .contato, .contato-right-div {
+  justify-content: space-between;
+}
+
 .contato-span {
   color: rgba(255, 255, 255, 0.6);;
+}
+
+.social-icons-container {
+  width: 110px;
+  justify-content: space-evenly;
+}
+
+.social-icons {
+  height: 12px;
 }
 
 .head {
@@ -80,8 +75,13 @@ a {
   padding-right: 20px;
 }
 
+.head, .head-sections {
+  z-index: 2; 
+}
+
 .logo {
   height: 100px;
+  width: 100px;
 }
 
 .head-sections {
@@ -100,9 +100,7 @@ a.home-button {
 }
 
 .home-main-text-container {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 100%;
 }
@@ -121,12 +119,35 @@ a.home-button {
   line-height: 1;
   font-size: 10vw;
   margin-bottom: 40px;
+  font-weight: 400;
 }
 
 .home-main-text-container div {
-  display: flex;
-  align-items: center;
   font-weight: 500;
   letter-spacing: 5px;
+  font-size: 17px;
+  font-weight: 700;
   color: #e52b34;
+  margin-bottom: 50px;
+}
+
+.home-buttons-container {
+  justify-content: space-between;
+  width: 35px;
+  position: absolute;
+  bottom: 125px;
+  z-index: 2;
+}
+
+.home-buttons {
+  height: 14px;
+  width: 14px;
+  border: 1px solid #4d4d4d;
+  border-radius: 7px;
+}
+
+@media (min-width:999px){
+  .home-page{
+    height: 965px;
+  }
 }
