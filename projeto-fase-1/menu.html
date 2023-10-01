@@ -6,6 +6,8 @@
   <title>Varanda Restaurante</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="contato.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="reserva.css">
   <link rel="icon" href="icones/icone.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -263,59 +265,168 @@
           <nav class="head-sections">
             <a href="index.html">HOME</a>
             <a href="sobre.html">SOBRE NÓS</a>
-            <a href="menu.html">MENU</a>
+            <a class="home-button" href="">MENU</a>
             <a href="reserva.html">RESERVA</a>
-            <a class="home-button" href="">CONTATO</a>
+            <a href="contato.html">CONTATO</a>
           </nav>
         </div>
       </div>
     </header>
-
     <div class="contato-container">
-      <h1 class="contato-h1">Contato</h1>
+      <h1 class="contato-h1">Menu</h1>
       <div class="contato-link-container">
         <a class="contato-a" href="index.html">HOME &#10095;</a>
-        <p class="contato-p">CONTATO &#10095;</p>
+        <p class="contato-p">MENU &#10095;</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container-section-informacao">
-      <div class="informacao-contato">
-        <h2>Informações de Contato</h2>
-        <div class="container-informacao">
-          <div class="bloco-informacao">
-            <p><span>ENDEREÇO:</span> Av. Euclídes Dourado, 450 - Heliópolis, Garanhuns - PE</p>
+  <section class="menu-section">
+    <div class="menu-titulo-display">
+      <div class="menu-titulo-container">
+        <div>
+          <div class="menu-subtitulo">
+            <p>Especialidades</p>
           </div>
-          <div class="bloco-informacao">
-            <p><span>TELEFONE:</span> &#40;87&#41;9999-9999</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>EMAIL:</span> varanda@email.com</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>WEBSITE:</span> varanda.com.br</p>
+          <div class="menu-titulo">
+            <h2>Nosso Menu</h2>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
-    <div class="contate">
-      <div class="contate-container">
-        <img src="imagens/maps.jpg" alt="">
-        <div class="nos-contate-container">
-          <h2>Nos Contate</h2>
-          <form action="">
-            <input placeholder="Seu Nome" type="text"><br>
-            <input placeholder="Seu Email" type="text"><br>
-            <input placeholder="Assunto" type="text">
-            <textarea placeholder="Mensagem" name="comentario" id="comentario" cols="30" rows="7" style="height: 111px;"></textarea><br>
-            <button>Enviar Mensagem</button>
-          </form>
+
+    <div class="menu-display">
+      <div class="menu-container">
+        <div class="borda-menu">
+          <h3>PRATOS</h3>
+          <div class="prato-container">
+            <img src="imagens/prato-1.jpg" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Filé à Parmegiana</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Filé à parmegiana, marcarrão, batatas fritas</p>
+            </div>
+          </div>
+          <div class="prato-container">
+            <img src="imagens/prato-2.jpg" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Picanha Argentina</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Picanha argentina, arroz, feijão e purê de batata</p>
+            </div>
+          </div>
+          <div class="prato-container">
+            <img src="imagens/prato-3.webp" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Bacalhau Zé do Pipo</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Bacalhau, molho branco, arroz e purê de batata</p>
+            </div>
+          </div>
+        </div>
+        <div class="borda-menu">
+          <h3>BEBIDAS</h3>
+          <div class="prato-container">
+            <img src="imagens/bebida-1.jpg" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Sucos de Fruta</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="prato-container">
+            <img src="imagens/bebida-2.webp" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Vinho</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="prato-container">
+            <img src="imagens/bebida-3.jpg" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Champanhe</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="borda-menu">
+          <h3>SOBREMESAS</h3>
+          <div class="prato-container">
+            <img src="imagens/sobremesa-1.jpg" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Petit Gateau</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="prato-container">
+            <img src="imagens/sobremesa-2.jpg" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Pudim</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="prato-container">
+            <img src="imagens/sobremesa-3.jpg" alt="">
+            <div>
+              <div class="prato-e-preco-container">
+                <p class="prato">Brownie com Sorvete</p>
+                <p class="preco">R$29</p>
+              </div>
+              <p class="descricao-prato">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="reserva-2-section">
+    <div class="reserva-2-display">
+      <div class="reserva-2-container">
+        <h2 class="reserva-2-h2">RESERVE SUA MESA</h2>
+        <form class="reserva-2" action="">
+          <div class="reserva-2-inputs-container">
+            <div>
+              <input class="input-reserva-2" placeholder="Nome" type="text" id="nome" name="nome" required>
+              <input class="input-reserva-2" placeholder="Data" type="date" id="telefone" name="telefone" required>
+            </div>
+            <div>
+              <input class="input-reserva-2" placeholder="Email" type="email" id="email" name="email" required>
+              <input class="input-reserva-2" placeholder="Hora" type="time" id="telefone" name="telefone" required>
+            </div>
+            <div>
+              <input class="input-reserva-2" placeholder="Telefone" type="text" id="telefone" name="telefone" required>
+              <input class="input-reserva-2" placeholder="Convidados" type="text" id="telefone" name="telefone" required>
+            </div>
+          </div>
+          <div class="botao-reserva-2-container">
+            <button class="botao-reserva-2" type="submit">Reserve Agora</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
   <footer>
     <div class="footer">
       <div class="footer-container">

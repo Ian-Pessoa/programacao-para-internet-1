@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Varanda Restaurante</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sobre.css">
   <link rel="stylesheet" href="contato.css">
   <link rel="icon" href="icones/icone.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -262,60 +263,89 @@
           </a>
           <nav class="head-sections">
             <a href="index.html">HOME</a>
-            <a href="sobre.html">SOBRE NÓS</a>
+            <a class="home-button" href="">SOBRE NÓS</a>
             <a href="menu.html">MENU</a>
             <a href="reserva.html">RESERVA</a>
-            <a class="home-button" href="">CONTATO</a>
+            <a href="contato.html">CONTATO</a>
           </nav>
         </div>
       </div>
     </header>
 
     <div class="contato-container">
-      <h1 class="contato-h1">Contato</h1>
+      <h1 class="contato-h1">Sobre Nós</h1>
       <div class="contato-link-container">
         <a class="contato-a" href="index.html">HOME &#10095;</a>
-        <p class="contato-p">CONTATO &#10095;</p>
+        <p class="contato-p">SOBRE NÓS &#10095;</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container-section-informacao">
-      <div class="informacao-contato">
-        <h2>Informações de Contato</h2>
-        <div class="container-informacao">
-          <div class="bloco-informacao">
-            <p><span>ENDEREÇO:</span> Av. Euclídes Dourado, 450 - Heliópolis, Garanhuns - PE</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>TELEFONE:</span> &#40;87&#41;9999-9999</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>EMAIL:</span> varanda@email.com</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>WEBSITE:</span> varanda.com.br</p>
+  <section class="chefs-section">
+    <div class="chefs-container">
+      <div class="chefs-container-h1">
+        <h1 class="back-h1">Chefs</h1>
+        <h1 class="main-h1">Nossos Chefes</h1>
+      </div>
+      <div class="chefs-photos-container">
+        <div class="chef-card">
+          <img src="imagens/chef-1.jpg" alt="">
+          <div class="chef-text">
+            <h3>Lucas Costa</h3>
+            <p class="cargo">Chefe de Cozinha</p>
+            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, omnis unde dolore ut.</p>
           </div>
         </div>
-      </div>  
-    </div>
-    <div class="contate">
-      <div class="contate-container">
-        <img src="imagens/maps.jpg" alt="">
-        <div class="nos-contate-container">
-          <h2>Nos Contate</h2>
-          <form action="">
-            <input placeholder="Seu Nome" type="text"><br>
-            <input placeholder="Seu Email" type="text"><br>
-            <input placeholder="Assunto" type="text">
-            <textarea placeholder="Mensagem" name="comentario" id="comentario" cols="30" rows="7" style="height: 111px;"></textarea><br>
-            <button>Enviar Mensagem</button>
-          </form>
+        <div class="chef-card">
+          <img src="imagens/chef-2.jpg" alt="">
+          <div class="chef-text">
+            <h3>Sofia Oliveira</h3>
+            <p class="cargo">Cozinheira</p>
+            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, omnis unde dolore ut.</p>
+          </div>
+        </div>
+        <div class="chef-card">
+          <img src="imagens/chef-3.jpg" alt="">
+          <div class="chef-text">
+            <h3>Pedro Santos</h3>
+            <p class="cargo">Cozinheiro</p>
+            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, omnis unde dolore ut.</p>
+          </div>
+        </div>
+        <div class="chef-card">
+          <img src="imagens/chef-4.jpg" alt="">
+          <div class="chef-text">
+            <h3>João Pereira</h3>
+            <p class="cargo">Cozinheiro</p>
+            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, omnis unde dolore ut.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="sobre-section">
+    <div class="sobre-div">
+      <div class="reserva">
+        <p class="titulo-reserva">RESERVE SUA MESA</p>
+        <form class="formulario" action="">
+          <input placeholder="Nome" type="text" id="nome" name="nome" required>
+          <input placeholder="Email" type="email" id="email" name="email" required>
+          <input placeholder="Telefone" type="text" id="telefone" name="telefone" required>
+          <input placeholder="Data" type="date" id="telefone" name="telefone" required>
+          <input placeholder="Hora" type="time" id="telefone" name="telefone" required>
+          <input placeholder="Convidados" type="text" id="telefone" name="telefone" required>
+          <button class="botao-reserva" type="submit">Reserve Agora</button>
+        </form>
+      </div>
+      <div class="sobre-formulario">
+        <h2 class="sobre-subtitulo">Sobre</h2>
+        <h2 class="bem-vindo">Bem-Vindo ao <br> Varanda</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat excepturi praesentium optio illo molestias numquam sequi. Suscipit at, recusandae voluptatibus saepe debitis ipsum minima cupiditate, repellendus, quas rem provident!</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="footer">
       <div class="footer-container">

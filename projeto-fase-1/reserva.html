@@ -6,6 +6,7 @@
   <title>Varanda Restaurante</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="contato.css">
+  <link rel="stylesheet" href="reserva.css">
   <link rel="icon" href="icones/icone.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -264,58 +265,66 @@
             <a href="index.html">HOME</a>
             <a href="sobre.html">SOBRE NÓS</a>
             <a href="menu.html">MENU</a>
-            <a href="reserva.html">RESERVA</a>
-            <a class="home-button" href="">CONTATO</a>
+            <a class="home-button" href="">RESERVA</a>
+            <a href="contato.html">CONTATO</a>
           </nav>
         </div>
       </div>
     </header>
 
     <div class="contato-container">
-      <h1 class="contato-h1">Contato</h1>
+      <h1 class="contato-h1">Faça sua Reserva</h1>
       <div class="contato-link-container">
         <a class="contato-a" href="index.html">HOME &#10095;</a>
-        <p class="contato-p">CONTATO &#10095;</p>
+        <p class="contato-p">RESERVA &#10095;</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="reserva-2-section">
+    <div class="reserva-2-display">
+      <div class="reserva-2-container">
+        <h2 class="reserva-2-h2">RESERVE SUA MESA</h2>
+        <form class="reserva-2" action="">
+          <div class="reserva-2-inputs-container">
+            <div>
+              <input class="input-reserva-2" placeholder="Nome" type="text" id="nome" name="nome" required>
+              <input class="input-reserva-2" placeholder="Data" type="date" id="telefone" name="telefone" required>
+            </div>
+            <div>
+              <input class="input-reserva-2" placeholder="Email" type="email" id="email" name="email" required>
+              <input class="input-reserva-2" placeholder="Hora" type="time" id="telefone" name="telefone" required>
+            </div>
+            <div>
+              <input class="input-reserva-2" placeholder="Telefone" type="text" id="telefone" name="telefone" required>
+              <input class="input-reserva-2" placeholder="Convidados" type="text" id="telefone" name="telefone" required>
+            </div>
+          </div>
+          <div class="botao-reserva-2-container">
+            <button class="botao-reserva-2" type="submit">Reserve Agora</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="about-display">
+      <div class="about-container">
+        <div class="about-imagens-container">
+          <img class="about-imagem-1" src="imagens/chef-about.jpg" alt="">
+          <img src="imagens/ambiente.jpg" alt="">
+        </div>
+        <div class="about-content-container">
+          <div>
+            <p class="about-subtitulo">Este é o nosso segredo</p>
+            <h3>Ingredientes de Primeira</h3>
+          </div>
+          <p class="about-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quo, ullam aliquam, incidunt nam repudiandae tenetur cum, laboriosam maxime repellat neque minus dolor. A voluptas sint fugit consequuntur repellendus eum!</p>
+          <button>Saiba mais</button>
+        </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container-section-informacao">
-      <div class="informacao-contato">
-        <h2>Informações de Contato</h2>
-        <div class="container-informacao">
-          <div class="bloco-informacao">
-            <p><span>ENDEREÇO:</span> Av. Euclídes Dourado, 450 - Heliópolis, Garanhuns - PE</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>TELEFONE:</span> &#40;87&#41;9999-9999</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>EMAIL:</span> varanda@email.com</p>
-          </div>
-          <div class="bloco-informacao">
-            <p><span>WEBSITE:</span> varanda.com.br</p>
-          </div>
-        </div>
-      </div>  
-    </div>
-    <div class="contate">
-      <div class="contate-container">
-        <img src="imagens/maps.jpg" alt="">
-        <div class="nos-contate-container">
-          <h2>Nos Contate</h2>
-          <form action="">
-            <input placeholder="Seu Nome" type="text"><br>
-            <input placeholder="Seu Email" type="text"><br>
-            <input placeholder="Assunto" type="text">
-            <textarea placeholder="Mensagem" name="comentario" id="comentario" cols="30" rows="7" style="height: 111px;"></textarea><br>
-            <button>Enviar Mensagem</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
   <footer>
     <div class="footer">
       <div class="footer-container">

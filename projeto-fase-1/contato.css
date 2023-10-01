@@ -76,7 +76,7 @@ p {
 .contate {
   display: flex;
   justify-content: center;
-  padding: 128px 0px;
+  padding-bottom: 128px;
 }
 
 .contate-container {
