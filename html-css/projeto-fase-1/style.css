@@ -1,0 +1,467 @@
+/* ---------- GERAL -----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* ---------- PÁGINA INICIAL -----------*/
+.mobile-head{
+  display: none;
+}
+
+.home-page {
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/background_1.jpg);
+  background-size: cover;
+  color: white; 
+}
+
+.home-page, .head, .head-sections, .contato, .contato-right-div, .social-icons-container, .home-main-text-container, .home-buttons-container, .comida-container{
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.contato {
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.contato, .contato-right-div {
+  z-index: 2; 
+  margin-bottom: 8px
+}
+
+.head, .head-sections, .contato, .contato-right-div {
+  justify-content: space-between;
+}
+
+.contato-span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social-icons-container {
+  width: 110px;
+  justify-content: space-evenly;
+}
+
+.social-icons {
+  height: 12px;
+}
+
+.head {
+  background-color: rgba(0,0,0,0.5);
+  width: 1100px;
+  height: 80px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.head, .head-sections {
+  z-index: 2; 
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.head-sections {
+  width: 580px;
+}
+
+.head-sections a {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+a.home-button {
+  color: #e52b34;
+  font-weight: 400;
+}
+
+.home-main-text-container {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.home-main-text-container h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 6px 10px;
+}
+
+.home-main-text-container h2 {
+  font-family: 'Dancing Script', cursive;
+  line-height: 1;
+  font-size: 10vw;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.comida-container {
+  margin-bottom: 85px;
+}
+
+.linha {
+  border: 1px solid #e52b34;
+  width: 85px;
+}
+
+.home-main-text-container h3 {
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #e52b34;
+  margin: 0 30px;
+}
+
+.home-buttons-container {
+  justify-content: space-between;
+  width: 35px;
+  position: absolute;
+  bottom: 125px;
+  z-index: 2;
+}
+
+.home-buttons {
+  height: 14px;
+  width: 14px;
+  border: 1px solid #4d4d4d;
+  border-radius: 7px;
+  border-style: double;
+  cursor: pointer;
+}
+
+
+
+/* ---------- SOBRE NÓS -----------*/
+
+.sobre-section {
+  display: flex;
+  justify-content: center;
+  height: 628px;
+}
+
+.sobre-div{
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(imagens/about.jpg.webp);
+  background-size: contain;
+  background-position: 280px 0px;
+  background-repeat: no-repeat;
+}
+
+.reserva {
+  background-color: #e52b34;
+  height: 100%;
+  padding: 48px;
+}
+
+.titulo-reserva {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.reserva input {
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  background-color: #e52b34;
+  height: 50px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 274px;
+}
+
+.reserva input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.botao-reserva {
+  padding: 16px 24px;
+  height: 58px;
+  width: 274px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.sobre-formulario {
+  margin-left: 55px;
+  width: 300px;
+}
+
+.sobre-subtitulo {
+  font-family: 'Dancing Script', cursive;
+  color: #e52b34;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: -22px;
+  z-index: 1;
+}
+
+.bem-vindo {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.3;
+  z-index: 2;
+}
+
+.sobre-formulario p {
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+  line-height: 2;
+}
+
+
+
+/* ---------- RODAPÉ -----------*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.footer-container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container, .footer {
+  background-color: #1a1a1a;
+}
+
+.footer-buttons-container {
+  display: flex;
+}
+
+.footer-container p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 2;
+  font-weight: 400;
+  margin-bottom: 32px;
+  width: 255px;
+}
+
+.footer-container h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.footer-container a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e52b34;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.footer-container a svg {
+  width: 20px;
+  height: 22px;
+}
+
+.footer-div-2, .footer-div-3, .footer-div-4 {
+  width: 255px;
+}
+
+.container-funcionamento {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dias, .horarios {
+  font-size: 14px;
+  line-height: 2;
+  list-style: none;
+}
+
+.dias {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+}
+
+.horarios {
+  color: grey;
+  font-weight: 400;
+  margin-right: 55px;
+}
+
+.instagram-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-div-3 img {
+  width: 85px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.footer-div-4 input, .footer-div-4 button{
+  width: 255px;
+  height: 52px;
+  font-size: 16px;
+  border-radius: 2px;
+  border: none;
+}
+
+.footer-div-4 input {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+}
+
+.footer-div-4 input::placeholder{
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.footer-div-4 button {
+  color: #fff;
+  background-color: #e52b34;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.copyright {
+  background-color: #e52b34;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+/* ---------- DISPLAY -----------*/
+
+@media (max-width:425px){
+  .home-page{
+    height: 700px;
+    background-position: 850px 0px;
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 425px;
+  }
+
+  .head {
+    display: none;
+  }
+
+  .contato {
+    display: none;
+  }
+
+  .mobile-head {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 425px;
+    background-color: black;
+    height: 75px;
+    padding: 0px 15px;
+  }
+
+  .mobile-head a {
+    width: 50px;
+  }
+
+  .mobile-head button {
+    width: 50px;
+    font-size: 15px;
+    color: grey;
+    background-color: black;
+    border: none;
+  }
+
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-div {
+    width: 425px;
+    flex-direction: column;
+  }
+
+  .sobre-section {
+    height: 1000px;
+  }
+
+  .reserva {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  @media (min-width: 426px) and (max-width: 1024px){
+    .home-page{
+      height: 751px;
+    }
+
+    .head, .header, .sobre-div, .footer-container{
+      width: 950px;
+    }
+
+    .sobre-div{
+      background-position: 100px 0px;
+    }
+}
+
+@media (min-width: 1025px){
+  .home-page{
+    height: 955px;
+  }
+}
