@@ -1,0 +1,132 @@
+p {
+  color: white;
+}
+
+.contato-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagens/background-2.jpg);
+  background-position: center;
+  height: 600px;
+}
+
+.contato-h1 {
+  margin-top: 320px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.contato-link-container {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contato-link-container a {
+  margin-right: 12px;
+}
+
+.container-section-informacao{
+  display: flex;
+  justify-content: center;
+}
+
+.informacao-contato {
+  width: 1100px;
+  padding: 128px 0px;
+}
+
+.container-informacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloco-informacao {
+  display: flex;
+  justify-content: center;
+  background-color: #e52b34;
+  width: 255px;
+  height: 176px;
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.informacao-contato h2 {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.bloco-informacao span {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.bloco-informacao p {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.contate {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 128px;
+}
+
+.contate-container {
+  display: flex;
+  width: 1100px;
+}
+
+.nos-contate-container {
+  padding: 48px;
+}
+
+.contate-container img {
+  width: 555px;
+  height: 656px;
+  padding: 0px 55px;
+  object-fit: cover;
+}
+
+.contate-container h2 {
+  margin-bottom: 48px;
+}
+
+.contate-container input, .contate-container textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #000000;
+  font-size: 16px;
+  border-radius: 0px;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+}
+
+.contate-container input {
+  width: 459px;
+  height: 52px;
+}
+
+.contate-container textarea {
+  height: inherit !important;
+  width: inherit !important;
+  width: 459px !important;
+  height: 182px !important;
+}
+
+.contate-container button {
+  color: white;
+  background-color: #e52b34;
+  padding: 16px 48px;
+  border: 1px solid #e52b34;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
